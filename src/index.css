@@ -1,13 +1,159 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+@layer base {
+  body {
+    max-width: 1440px;
+    @apply mx-auto;
+  }
+}
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Nunito";
+  background: #f6f6f6;
+}
+.alink {
+  display: flex;
+  gap: 8px;
+  color: #7e7d88;
+  cursor: pointer;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 4.75rem;
+}
+.link-active {
+  display: flex;
+  gap: 8px;
+  color: #7e7d88;
+  cursor: pointer;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 4.75rem;
+  background-color: #a4d96c;
+  color: white;
+}
+.alinks {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+  color: #7e7d88;
+  cursor: pointer;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 1.9rem;
+}
+.link-actives {
+  display: inline-flex;
+  gap: 8px;
+  cursor: pointer;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 1.9rem;
+  background-color: #a4d96c;
+  color: white;
+}
+.link-dropdown {
+  color: #7e7d88;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 1.9rem;
+}
+.link-dropdown-hover {
+  color: white;
+  background-color: #a4d96c;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  padding-right: 1.9rem;
+}
+.list-item-drop {
+  display: none;
+}
+.menu-dropdown:hover .list-item-drop {
+  display: flex;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu-itemlast {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.0625rem;
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #7e7d88;
+}
+.menu-icon {
+  width: 1.125rem;
+  height: 1.25rem;
+}
+.shadowitem {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.colorRgb {
+  background-color: rgba(255, 149, 1, 0.15);
+}
+.select {
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
+.l1:hover {
+  background: #fff2e7;
+}
+.l2:hover {
+  background: #fff2e7;
+}
+.l3:hover {
+  background: #fff2e7;
+}
+table {
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  border-spacing: 1px;
+  table-layout: auto;
+}
+th {
+  border: 1px solid #a4d96c;
+  background: #a4d96c;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  text-align: left;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 16px;
+  color: #535261;
+  border-left: 1px solid #ffe3cd;
+  border-right: 1px solid #ffe3cd;
+  text-align: left;
+}
+tr:nth-of-type(even) {
+  background-color: #fff2e7;
 }
