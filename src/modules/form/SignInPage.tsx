@@ -56,11 +56,11 @@ const SignInPage = (props: Props) => {
       >
         <div className="flex flex-col gap-1">
           <Label className="" htmlFor="email">
-            Tên đăng nhập *
+            Email *
           </Label>
           <Input
             autoComplete="off"
-            placeholder="lequynhaivan01"
+            placeholder="tranvanhuu76@gmail.com"
             type="email"
             className=" w-[440px] h-[44px]  border-gray"
             name="email"
@@ -151,6 +151,12 @@ const SignInPage = (props: Props) => {
           className="block  leading-[21px] text-red  text-[14px] font-[400] mt-2 ml-[173px]"
         >
           Quên mật khẩu
+        </Link>
+        <Link
+          to={"/signUp"}
+          className="block  leading-[21px] text-red  text-[14px] font-[400] mt-2 ml-[173px]"
+        >
+          Đăng ký
         </Link>
       </form>
     </Ractangle>

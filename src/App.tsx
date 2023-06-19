@@ -23,6 +23,8 @@ import { AuthProvider } from "./context/Auth-context";
 import SignInPage from "./modules/form/SignInPage";
 import Menubar from "./auth/user/Menubar";
 import DetailDeviceHeader from "./auth/device/detailDevice/DetailDeviceHeader";
+import SignUpPage from "./modules/form/SignUpPage";
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<SignInPage></SignInPage>}></Route>
+          <Route path="/signUp" element={<SignUpPage></SignUpPage>}></Route>
           <Route
             path="/forgotpassword"
             element={<Forgotpassword></Forgotpassword>}
